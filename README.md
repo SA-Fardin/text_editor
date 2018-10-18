@@ -1,2 +1,2 @@
 # Text_Editor
-https://sa-fardin.github.io/cup_plans/
+https://sa-fardin.github.io/text_editor/
