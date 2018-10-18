@@ -1,0 +1,124 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+@import 'normalize';
+body {
+    background-color: #464f54;
+}
+@font-face {
+    font-family: 'proxima';
+    src: url('../fonts/proxima-nova-regular-webfont.woff2') format('woff2'), url('../fonts/proxima-nova-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'playfair';
+    src: url('../fonts/playfairdisplaysc-regular-webfont.woff2') format('woff2'), url('../fonts/playfairdisplaysc-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'futura';
+    src: url('../fonts/futura-pt-heavy.otf') format('opentype');
+}
+.container {
+    background-color: #464f54;
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+}
+.first-box {
+    height: 186px;
+    background-color: #000000;
+    position: absolute;
+    top: -100px;
+    right: 0;
+    left: calc(50% - 280px);
+    z-index: 1;
+    padding: 60px 50px;
+    &__h-six {
+        font-family: proxima, arial;
+        color: #767676;
+        font-size: 15px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    &__input {
+        height: 61px;
+        width: 100%;
+        font-family: playfair;
+        color: #ffffff;
+        background-color: transparent;
+        font-size: 48px;
+        margin-top: 0;
+        margin-bottom: 0;
+        border: none;
+        border-bottom: 3px solid #303030;
+        outline: none;
+    }
+}
+.second-box {
+    height: 75px;
+    background-color: #f9bf2d;
+    padding-left: 40px;
+    ;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 86px;
+    right: 0;
+    z-index: 1;
+    left: calc(50% - 220px);
+    &__img {
+        height: 25px;
+        margin-left: 15px;
+        margin-right: 15px;
+        opacity: .5;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+.relative {
+    position: relative;
+}
+.third-box {
+    background-color: #ffffff;
+    padding-left: 68px;
+    margin-left: 0;
+    margin-top: 150px;
+    z-index: 0;
+    &__h-four {
+        font-family: proxima, arial;
+        letter-spacing: .2em;
+        color: #b4b4b4;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    &__h-one {
+    	font-family: futura, arial;
+    	text-transform: uppercase;
+    	font-size: 78px;
+        color: #2a2a2a;
+        margin: 0;
+    }
+    &__h-three {
+        color: #8f8f8f;
+        font-family: Georgia;
+        font-style: italic;
+        font-weight: normal;
+        margin-top: 0;
+        font-size: 30px;
+    }
+    &__p {
+        color: #000000;
+        font-size: 27px;
+        font-family: Georgia;
+    }
+    &__border {
+        padding: 200px 50px 100px;
+        border-left: 2px solid #e8eced;
+    }
+}
